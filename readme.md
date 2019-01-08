@@ -8,7 +8,7 @@ Copy your sales tax report to the folder location as "amazon.csv" and then simpl
 python collatesalestax.py
 The script will output your results to output.csv.  Note that this will combine all "district" jurisdiction taxes into the same thing.  This was programmed for Wisconsin Sales & Use tax, which doesn't have overlapping "district" taxes.  If your state has this (not sure if that's ever the case), these values will be inaccurate and the script will have to be modified to identify these.  This will will not re-sort the document but you now can easily do it through a spreadsheet application since al values will be present.
 
-You'll find counties with "NOT APPLICABLE" and unfortunately you'll have to go by the shipping zip to find those counties manually.  These are for counties that do not have their own sales tax.
+You'll find counties with "NOT APPLICABLE" and unfortunately you'll have to go by the shipping zip to find those counties manually.  These are for counties that do not have their own sales tax.  https://www.getzips.com/zip.htm seems to be a good tool for this.
 ### Prereqs
 
 You should only need python 3.X and standard python libraries for this application.
