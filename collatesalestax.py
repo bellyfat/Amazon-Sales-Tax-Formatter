@@ -36,17 +36,6 @@ def getOrders(reader):
                 yield order
                 order = None
             order = Order(newOrderID)
-        '''
-        shipZip = row[35]
-        if shipZip != "":
-            order.shipZip = shipZip
-        jurisdictionLevel= row[44].lower().strip()
-        jurisdictionName=row[45] #Jurisdiction_Name
-        taxableAmountString= row[64].strip()
-        taxWithheldString= row[59].strip() #Taxable_Amount
-        taxableAmount = Decimal(taxableAmountString) if taxableAmountString != '' else 0
-        taxWithheld = Decimal(taxWithheldString) if taxWithheldString != '' else 0 
-        '''
         
         shipZip = row[34]
         if shipZip != "":
